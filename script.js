@@ -1,12 +1,6 @@
 const data = [
-  {
-    title: "Binəqədidə Hüseynin Vebsaytı Açıldı",
-    content: "Bu gün Hüseyn öz şəxsi xəbər portalını işə saldı. Layihə uğurla açıldı və artıq xəbərlər ekranda görünür."
-  },
-  {
-    title: "Xəbər saytımızın ilk oxucusu",
-    content: "Saytımızın ilk oxucusu mənim ailə uzvlərim oldu!"
-  },
+  
+ 
   {
     title: "DÇ-2026 seçmə mərhələsi: Ronaldu qol vurdu, Portuqaliya qalib gəldi",
     content: "2026-cı ildə keçiriləcək dünya çempionatının seçmə mərhələsi çərçivəsində daha bir görüş başa çatıb.YeniSəhnə.Az xəbər verir ki, Budapeştdəki Puşkaş Arenada Macarıstan millsi Portuqaliya seçməsini qəbul edib.Oyunda hesabı 21-ci dəqiqədə Varqanın qolu ilə meydan sahibləri açsalar da, sonda sevinən tərəf qonaqlar olub.36-cı dəqiqədə Silva dəqiq zərbə ilə hesabı bərabərləşdirib. 56-cı dəqiqədə Kriştianu Ronaldu penaltidən fərqlənərək komandasını önə çıxarıb. Bununla da, 40 yaşlı futbolçu dünya çempionatının seçmə oyunlarında qol sayına görə mövcud rekordu təkrarlayıb. O, 39-cu qolunu vuraraq qvatemalalı Karlos Ruizə çatıb.84-cü dəqiqədə Varqa dubla imza atmaqla hesabda tarazlıq yaratsa da, 2 dəqiqə sonra Konselo Portuqaliyaya 3 xalı qazandıran qolu vurub - 2:3.Bu qələbə sayəsində Priney təmsilçisi 6 xalla F qrupunda liderdir. Macarıstan isə cəmi 1 xalla üçüncü pillədə qərarlaşıb."
