@@ -232,4 +232,41 @@ footer {
 
 .comment-section button:hover {
   background-color: #0077cc;
+}.comment-section {
+  margin-top: 30px;
+}
+
+.comment-section input,
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.comment-section button {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comment-section button:hover {
+  background-color: #0077cc;
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border-left: 4px solid #00aaff;
 }
