@@ -103,4 +103,49 @@ footer {
   padding: 20px;
   background-color: #eee;
   margin-top: 40px;
+}/* Mobil uyğunluq: 768px-dən kiçik ekranlar */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .news, .news-page {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .news h2 {
+    font-size: 1.3em;
+  }
+
+  .news-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .comment-section textarea,
+  .comment-section input {
+    font-size: 1em;
+  }
+
+  .comment-section button,
+  .back-button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+}.news-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
