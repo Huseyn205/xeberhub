@@ -2,48 +2,42 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XeberHub</title>
+  <title>XəbərHub</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Giriş hissəsi -->
   <header class="hero">
     <div class="hero-content">
       <h1>XəbərHub — Sənin gündəmin, sənin səhnən 💙</h1>
       <p>Binəqədidən Bakıya, meydandan mikrofona — burda hər xəbər sənin ruhuna toxunur.</p>
-      <a href="#news" class="cta-button">Ən son xəbərlərə keç →</a>
     </div>
   </header>
 
-  <!-- Xəbər bölməsi -->
   <main id="news">
-    <section class="news">
+    <section class="news" onclick="openModal('bineqedi')">
       <h2>📍 Binəqədi xəbəri</h2>
-      <p>Hüseynin vebsaytı açıldı — XeberHub artıq canlıdır!</p>
+      <p>Hüseynin vebsaytı açıldı — kliklə daha ətraflı oxu.</p>
     </section>
 
-    <section class="news">
-      <h2>⚽ Ronaldo xəbər başlığı</h2>
-      <p>DÇ-2026 seçmə mərhələsində Portuqaliya 3:1 qalib gəldi.</p>
-    </section>
-
-    <section class="news">
-      <h2>🇦🇿 Azərbaycan vs Ukrayna</h2>
-      <p>Bakı Olimpiya Stadionunda gərgin qarşılaşma — 2:2 bərabərlik.</p>
-    </section>
-
-    <section class="news">
-      <h2>🇮🇹 İtaliya vs İsrail</h2>
-      <p>İtaliya 5:4 hesabı ilə qalib gəldi — penaltilər dramatik oldu.</p>
+    <section class="news" onclick="openModal('ronaldo')">
+      <h2>⚽ Ronaldo seçmə mərhələdə parladı</h2>
+      <p>Portuqaliya 3:1 qalib gəldi — kliklə tam xəbəri oxu.</p>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Modal pəncərə -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
   <footer>
-    <p>© 2025 XəbərHub. Hüseyn Yusif tərəfindən yaradılıb 💙</p>
+    <p>© 2025 XəbərHub. Hüseyn205 tərəfindən yaradılıb 💙</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

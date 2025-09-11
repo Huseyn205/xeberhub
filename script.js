@@ -1,67 +1,37 @@
-const data = [
-  
- 
-  {
-    title: "DÇ-2026 seçmə mərhələsi: Ronaldu qol vurdu, Portuqaliya qalib gəldi",
-    content: "2026-cı ildə keçiriləcək dünya çempionatının seçmə mərhələsi çərçivəsində daha bir görüş başa çatıb.YeniSəhnə.Az xəbər verir ki, Budapeştdəki Puşkaş Arenada Macarıstan millsi Portuqaliya seçməsini qəbul edib.Oyunda hesabı 21-ci dəqiqədə Varqanın qolu ilə meydan sahibləri açsalar da, sonda sevinən tərəf qonaqlar olub.36-cı dəqiqədə Silva dəqiq zərbə ilə hesabı bərabərləşdirib. 56-cı dəqiqədə Kriştianu Ronaldu penaltidən fərqlənərək komandasını önə çıxarıb. Bununla da, 40 yaşlı futbolçu dünya çempionatının seçmə oyunlarında qol sayına görə mövcud rekordu təkrarlayıb. O, 39-cu qolunu vuraraq qvatemalalı Karlos Ruizə çatıb.84-cü dəqiqədə Varqa dubla imza atmaqla hesabda tarazlıq yaratsa da, 2 dəqiqə sonra Konselo Portuqaliyaya 3 xalı qazandıran qolu vurub - 2:3.Bu qələbə sayəsində Priney təmsilçisi 6 xalla F qrupunda liderdir. Macarıstan isə cəmi 1 xalla üçüncü pillədə qərarlaşıb."
-  
+function openModal(newsId) {
+  const modal = document.getElementById("modal");
+  const body = document.getElementById("modal-body");
 
-  },
-  {
-    title: "Azərbaycan millisi Ukrayna ilə qarşılaşdı",
-    content: "Bakı Olimpiya Stadionunda keçirilən oyunda qalib müəyyənləşməsə də, millimizin oyunu müsbət qarşılandı."
-  },
-  {
-    title: "İtaliya millisi İsrailə qarşı 5:4 hesablı qələbə qazandı",
-    content: "Dramatik qarşılaşmada İtaliya millisi seçmə mərhələdə gücünü göstərdi."
-  },
+  let content = "";
 
-
-
-
-];
-
-// Xəbər siyahısı
-
-
-const container = document.getElementById('news-container');
-const searchInput = document.getElementById('search');
-
-function showNews(newsArray) {
-  container.innerHTML = '';
-  newsArray.forEach(item => {
-    const card = document.createElement('div');
-    card.className = 'news-card';
-    card.innerHTML = `
-      <img src="${item.image}" alt="Şəkil" class="news-image">
-      <h3>${item.title}</h3>
-      <p>${item.content.slice(0, 200)}...</p>
+  if (newsId === "bineqedi") {
+    content = `
+      <h2>📍 Binəqədi xəbəri</h2>
+      <img src="images/bineqedi.jpg" alt="Binəqədi" style="width:100%; border-radius:8px; margin-bottom:20px;">
+      <p>Hüseynin XeberHub vebsaytı Binəqədidə sevinc dalğası yaratdı. Yerli sakinlər saytın dizaynını yüksək qiymətləndirir.</p>
+      <div class="comment-section">
+        <h3>💬 Şərh yaz</h3>
+        <form><textarea placeholder="Fikirlərini yaz..." rows="4"></textarea><br><button type="submit">Göndər</button></form>
+      </div>
     `;
+  }
 
-    card.addEventListener('click', () => {
-      container.innerHTML = `
-        <div class="full-article">
-          <img src="${item.image}" alt="Tam şəkil" class="full-image">
-          <h2>${item.title}</h2>
-          <p>${item.content}</p>
-          <button id="back">← Geri</button>
-        </div>
-      `;
-      document.getElementById('back').addEventListener('click', () => showNews(data));
-    });
+  if (newsId === "ronaldo") {
+    content = `
+      <h2>⚽ Ronaldo seçmə mərhələdə parladı</h2>
+      <img src="images/ronaldo.jpg" alt="Ronaldo" style="width:100%; border-radius:8px; margin-bottom:20px;">
+      <p>DÇ-2026 seçmə mərhələsində Portuqaliya 3:1 qalib gəldi. Ronaldo 2 qol vuraraq liderliyini bir daha sübut etdi.</p>
+      <div class="comment-section">
+        <h3>💬 Şərh yaz</h3>
+        <form><textarea placeholder="Fikirlərini yaz..." rows="4"></textarea><br><button type="submit">Göndər</button></form>
+      </div>
+    `;
+  }
 
-    container.appendChild(card);
-  });
+  body.innerHTML = content;
+  modal.style.display = "block";
 }
 
-showNews(data);
-
-// 🔍 Axtarış funksiyası
-searchInput.addEventListener('input', () => {
-  const query = searchInput.value.toLowerCase();
-  const filtered = data.filter(item =>
-    item.title.toLowerCase().includes(query) ||
-    item.content.toLowerCase().includes(query)
-  );
-  showNews(filtered);
-});
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
