@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>📍 Binəqədi xəbəri — XəbərHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="news-page">
+    <h1>📍 Binəqədi xəbəri</h1>
+    <img src="images/bineqedi.jpg" alt="Binəqədi" class="news-image">
+    <p>Hüseynin XeberHub vebsaytı Binəqədidə sevinc dalğası yaratdı. Yerli sakinlər saytın dizaynını yüksək qiymətləndirir.</p>
+
+    <div class="comment-section">
+      <h3>💬 Şərh yaz</h3>
+      <form onsubmit="submitComment(event, 'bineqedi')">
+        <input type="text" placeholder="Adını yaz" required>
+        <textarea placeholder="Fikirlərini yaz..." rows="4" required></textarea>
+        <button type="submit">Göndər</button>
+      </form>
+      <div class="comment-list" id="comments-bineqedi"></div>
+    </div>
+
+    <a href="index.html" class="back-button">← Ana səhifəyə qayıt</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

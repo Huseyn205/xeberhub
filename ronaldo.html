@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>⚽ Ronaldo xəbəri — XəbərHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="news-page">
+    <h1>⚽ Ronaldo seçmə mərhələdə parladı</h1>
+    <img src="images/ronaldo.jpg" alt="Ronaldo" class="news-image">
+    <p>DÇ-2026 seçmə mərhələsində Portuqaliya 3:1 qalib gəldi. Ronaldo 2 qol vuraraq liderliyini bir daha sübut etdi.</p>
+
+    <div class="comment-section">
+      <h3>💬 Şərh yaz</h3>
+      <form onsubmit="submitComment(event, 'ronaldo')">
+        <input type="text" placeholder="Adını yaz" required>
+        <textarea placeholder="Fikirlərini yaz..." rows="4" required></textarea>
+        <button type="submit">Göndər</button>
+      </form>
+      <div class="comment-list" id="comments-ronaldo"></div>
+    </div>
+
+    <a href="index.html" class="back-button">← Ana səhifəyə qayıt</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

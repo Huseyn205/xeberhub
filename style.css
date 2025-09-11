@@ -1,13 +1,10 @@
-/* Ümumi stil */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
 
-/* Giriş hissəsi */
 .hero {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
@@ -26,21 +23,6 @@ body {
   font-style: italic;
 }
 
-.cta-button {
-  background-color: #00aaff;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #0077cc;
-}
-
-/* Ana səhifədəki xəbər blokları */
 .news {
   background-color: white;
   margin: 20px auto;
@@ -50,22 +32,15 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.news h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-}
-
-.news a {
+.news h2 a {
   color: #0077cc;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.news a:hover {
+.news h2 a:hover {
   text-decoration: underline;
 }
 
-/* Ayrı xəbər səhifələri */
 .news-page {
   max-width: 700px;
   margin: 40px auto;
@@ -75,165 +50,10 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.news-page h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.news-page p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* Geri qayıt düyməsi */
-.back-button {
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #00aaff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #0077cc;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #eee;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-
-/* Mobil uyğunluq */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2em;
-  }
-
-  .hero-content p {
-    font-size: 1em;
-  }
-
-  .news, .news-page {
-    padding: 15px;
-    margin: 15px;
-  }
-}/* Əvvəlki stil hissələri burada qalır... */
-
-/* Modal stil */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6);
-}
-
-.modal-content {
-  background-color: white;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 700px;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px; right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Şərh forması */
-.comment-section textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  resize: vertical;
-  margin-top: 20px;
-}
-
-.comment-section button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #00aaff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.comment-section button:hover {
-  background-color: #0077cc;
-}/* Modal stil */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6);
-}
-
-.modal-content {
-  background-color: white;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 700px;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px; right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Modal içindəki şəkil */
-.modal-content img {
+.news-image {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 20px;
-}
-
-/* Şərh forması */
-.comment-section textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  resize: vertical;
-  margin-top: 20px;
-}
-
-.comment-section button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #00aaff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.comment-section button:hover {
-  background-color: #0077cc;
-}.comment-section {
-  margin-top: 30px;
 }
 
 .comment-section input,
@@ -255,10 +75,6 @@ footer {
   cursor: pointer;
 }
 
-.comment-section button:hover {
-  background-color: #0077cc;
-}
-
 .comment-list {
   margin-top: 20px;
 }
@@ -269,4 +85,22 @@ footer {
   border-radius: 6px;
   margin-bottom: 10px;
   border-left: 4px solid #00aaff;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
 }
