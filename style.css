@@ -1,3 +1,71 @@
+/* Ümumi stil */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Giriş hissəsi */
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.cta-button {
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0077cc;
+}
+
+/* Ana səhifədəki xəbər blokları */
+.news {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.news h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.news a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}
+
+/* Ayrı xəbər səhifələri */
 .news-page {
   max-width: 700px;
   margin: 40px auto;
@@ -17,6 +85,7 @@
   line-height: 1.6;
 }
 
+/* Geri qayıt düyməsi */
 .back-button {
   display: inline-block;
   margin-top: 30px;
@@ -31,4 +100,29 @@
 
 .back-button:hover {
   background-color: #0077cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Mobil uyğunluq */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .news, .news-page {
+    padding: 15px;
+    margin: 15px;
+  }
 }
