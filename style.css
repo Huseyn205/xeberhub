@@ -37,6 +37,19 @@ body {
   background-color: #0077cc;
 }
 
+.news {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.news h2 {
+  margin-top: 0;
+}
+
 footer {
   text-align: center;
   padding: 20px;
